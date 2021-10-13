@@ -1,2 +1,2 @@
 # cobro_docentes_modulo
-Módulo para que un docente sepa si podrá cobrar o no.
+Módulo para que un docente sepa si podrá cobrar o no en la UNAE.
