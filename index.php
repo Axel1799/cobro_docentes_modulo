@@ -30,7 +30,7 @@
 	</nav>
 
 
-	<div class="bg-contact2" style="background-image: url('images/universidad2.png');">
+	<div class="bg-contact2" style="background-image: url('/images/unae.png');">
 		<div class="container-contact2">
 			<div class="wrap-contact2">
 				<form action="/cobro/search.php" method="POST" class="contact2-form validate-form">

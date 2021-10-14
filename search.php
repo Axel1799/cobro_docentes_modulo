@@ -86,22 +86,22 @@
 								</div>
 
 								<div class="wrap-input2 validate-input" data-validate="Name is required">
-									<span class="focus-input2" data-placeholder="CONTROLADO POR CANTONI"></span><br>
+									<span class="focus-input2" data-placeholder="CONTROL POR CANTONI"></span><br>
 									<input class="input2" style="font-weight: bold" type="text" placeholder="<?= $finfo["control_cantoni"] ?>" readonly>
 								</div>
 
 								<div class="wrap-input2 validate-input" data-validate="Name is required">
-									<span class="focus-input2" data-placeholder="CONTROLADO POR NADIA"></span><br>
+									<span class="focus-input2" data-placeholder="CONTROL POR NADIA"></span><br>
 									<input class="input2" style="font-weight: bold" type="text" placeholder="<?= $finfo["control_nadia"] ?>" readonly>
 								</div>
 
 								<div class="wrap-input2 validate-input" data-validate="Name is required">
-									<span class="focus-input2" data-placeholder="CONTROLADO POR RITA/SIMONELLI/VERENA"></span><br>
+									<span class="focus-input2" data-placeholder="CONTROL POR RITA/SIMONELLI/VERENA"></span><br>
 									<input class="input2" style="font-weight: bold" type="text" placeholder="<?= $finfo["control_rita_simo_vere"] ?>" readonly>
 								</div>
 
 								<div class="wrap-input2 validate-input" data-validate="Name is required">
-									<span class="focus-input2" data-placeholder="CONTROLADO POR COLONIAS"></span><br>
+									<span class="focus-input2" data-placeholder="CONTROL POR COLONIAS"></span><br>
 									<input class="input2" style="font-weight: bold" type="text" placeholder="<?= $finfo["control_colonias"] ?>" readonly>
 								</div>
 
