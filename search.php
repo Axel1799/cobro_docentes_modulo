@@ -28,22 +28,16 @@
 	</nav>
 
 
-	<div class="bg-contact2" style="background-image: url('images/universidad2.png');">
+	<div class="bg-contact2">
 		<div class="container-contact2">
 			<div class="wrap-contact2">
-				<form action="/cobro/" method="POST" class="contact2-form validate-form">
+				<form action="/cobros/" method="POST" class="contact2-form validate-form">
 					<span class="contact2-form-title">
 						Cobros
 					</span>
 					<?php
 
-					$mysqli = new mysqli("localhost", "root", "", "cobros_docentes");
-
-					/* verificar la conexión */
-					if (mysqli_connect_errno()) {
-						printf("Conexión fallida: %s\n", mysqli_connect_error());
-						exit();
-					}
+					require("data/db.php");
 
 					if (isset($_POST["acta"])) {
 

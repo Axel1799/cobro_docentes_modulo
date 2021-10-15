@@ -150,6 +150,7 @@ iframe {
 /*//////////////////////////////////////////////////////////////////
 [ Contact 2 ]*/
 .bg-contact2 {
+  background-image: url("../images/universidad2.png");
   width: 100%;  
   background-repeat: no-repeat;
   background-position: center center;
@@ -168,11 +169,11 @@ iframe {
   justify-content: center;
   align-items: center;
   padding: 15px;
-  background: rgba(248, 209, 33, 1);
-  background: -webkit-linear-gradient(45deg, rgba(248, 209, 33, 1), rgba(253, 233, 145, 1));
-  background: -o-linear-gradient(45deg, rgba(248, 209, 33, 1), rgba(253, 233, 145, 1));
-  background: -moz-linear-gradient(45deg, rgba(248, 209, 33, 1), rgba(253, 233, 145, 1));
-  background: linear-gradient(45deg, rgba(248, 209, 33, 1), rgba(253, 233, 145, 1));
+  background: rgba(255, 220, 64, 1);
+  background: -webkit-linear-gradient(45deg, rgba(255, 220, 64, 1), rgba(255, 228, 94, 0.6));
+  background: -o-linear-gradient(45deg, rgba(255, 220, 64, 1), rgba(255, 228, 94, 0.6));
+  background: -moz-linear-gradient(45deg, rgba(255, 220, 64, 1), rgba(255, 228, 94, 0.6));
+  background: linear-gradient(45deg, rgba(255, 220, 64, 1), rgba(255, 228, 94, 0.6));
 }
 
 .wrap-contact2 {

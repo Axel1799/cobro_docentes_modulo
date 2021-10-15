@@ -30,10 +30,10 @@
 	</nav>
 
 
-	<div class="bg-contact2" style="background-image: url('/images/unae.png');">
+	<div class="bg-contact2">
 		<div class="container-contact2">
 			<div class="wrap-contact2">
-				<form action="/cobro/search.php" method="POST" class="contact2-form validate-form">
+				<form action="/cobros/search.php" method="POST" class="contact2-form validate-form">
 					<span class="contact2-form-title">
 						Cobros
 					</span>
@@ -55,9 +55,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
 
 	<!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
