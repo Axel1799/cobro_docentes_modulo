@@ -3,7 +3,7 @@
 
 <head>
 	<title>Cobro Docentes</title>
-	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="icon" type="image/png" href="images/icons/cash.png" />
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
@@ -95,7 +95,7 @@
 								</div>
 
 								<div class="wrap-input2 validate-input" data-validate="Name is required">
-									<span class="focus-input2" data-placeholder="CONTROL POR COLONIAS"></span><br>
+									<span class="focus-input2" data-placeholder="CONTROL POR COLONIAS (Solo aplicable a la Sede Hohenau)"></span><br>
 									<input class="input2" style="font-weight: bold" type="text" placeholder="<?= $finfo["control_colonias"] ?>" readonly>
 								</div>
 
@@ -106,7 +106,7 @@
 
 								<div class="wrap-input2 validate-input" data-validate="Name is required">
 									<span class="focus-input2" data-placeholder="OBSERVACIÓN"></span><br>
-									<input class="input2" style="font-weight: bold" type="text" placeholder="<?= $finfo["obs"] ?>" readonly>
+									<textarea class="input2" style="font-weight: bold" type="text" placeholder="<?= $finfo["obs"] ?>" readonly></textarea>
 								</div>					
 
 					<?php						
@@ -143,6 +143,7 @@
 							</button>
 						</div>
 					</div>
+					<br><p align="center">Ante cualquier inconsistencia, comunicarse al +595 986 635960</p>
 
 				</form>
 			</div>
@@ -167,7 +168,7 @@
 <footer class="footer-distributed">
 
 	<div class="footer-left justify-content-center">
-		<p>Designed by UNAE &copy; 2021</p>
+		<p>Designed by Axel Jara &copy; 2021</p>
 	</div>
 
 </footer>
