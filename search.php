@@ -31,7 +31,7 @@
 	<div class="bg-contact2">
 		<div class="container-contact2">
 			<div class="wrap-contact2">
-				<form action="/cobros/" method="POST" class="contact2-form validate-form">
+				<form action="/cobros/cobro_docentes_modulo/" method="POST" class="contact2-form validate-form">
 					<span class="contact2-form-title">
 						Cobros
 					</span>
@@ -62,12 +62,21 @@
 								<span class="contact2-form-title" style="color: #f8d121">
 									¡Encontrado!
 								</span>
+
+								<p style="color: #cf1313">
+									<u>Observación</u>: Tenga en cuenta que si alguno de los datos expresados en esta página difiere a los datos que usted considera correctos, debe comunicar esa diferencia a su Unidad Académica y dicho cambio se aplicará a partir de las 24 horas sucesivas.
+								</p> <br><br>
 								<p>Código de acta <?= $finfo["acta"] ?></p><br>
 
 								<div class="wrap-input2 validate-input" data-validate="Name is required">
 									<span class="focus-input2" data-placeholder="¿HABILITADO/A PARA COBRAR?"></span><br>
-									<input class="input2" style="font-weight: bold" type="text" placeholder="<?= $finfo["habilitado"] ?>" readonly>
+									<input class="input2" style="font-weight: bold" type="text" font placeholder="<?= $finfo["habilitado"] ?>" readonly>
 								</div><br>
+
+								<div class="wrap-input2 validate-input" data-validate="Name is required">
+									<span class="focus-input2" data-placeholder="HORAS A COBRAR EN ESTA MATERIA"></span><br>
+									<input class="input2" style="font-weight: bold" type="text" placeholder="<?= $finfo["hours"] ?>" readonly>
+								</div>
 
 								<div class="wrap-input2 validate-input" data-validate="Name is required">
 									<span class="focus-input2" data-placeholder="DESCRIPCIÓN"></span><br>
@@ -80,27 +89,33 @@
 								</div>
 
 								<div class="wrap-input2 validate-input" data-validate="Name is required">
-									<span class="focus-input2" data-placeholder="CONTROL POR CANTONI"></span><br>
+									<span class="focus-input2" data-placeholder="CONTROL DE CARGA DE PUNTAJES A MAIUS - MGTER. FRANCISCO CANTONI"></span><br>
 									<input class="input2" style="font-weight: bold" type="text" placeholder="<?= $finfo["control_cantoni"] ?>" readonly>
 								</div>
 
 								<div class="wrap-input2 validate-input" data-validate="Name is required">
-									<span class="focus-input2" data-placeholder="CONTROL POR NADIA"></span><br>
+									<span class="focus-input2" data-placeholder="CONTROL DE CARGA DE HORAS ASIGNADAS - LIC. NADIA CORREA"></span><br>
 									<input class="input2" style="font-weight: bold" type="text" placeholder="<?= $finfo["control_nadia"] ?>" readonly>
 								</div>
 
 								<div class="wrap-input2 validate-input" data-validate="Name is required">
-									<span class="focus-input2" data-placeholder="CONTROL POR RITA/SIMONELLI/VERENA"></span><br>
-									<input class="input2" style="font-weight: bold" type="text" placeholder="<?= $finfo["control_rita_simo_vere"] ?>" readonly>
+									<span class="focus-input2" data-placeholder="CONTROL DE PLATAFORMA MOODLE - UNIDAD ACADÉMICA"></span><br>
+									<input class="input2" style="font-weight: bold" type="text" placeholder="<?= $finfo["control_moodle"] ?>" readonly>
 								</div>
-
+								<!-- Fuera temporalmente 
 								<div class="wrap-input2 validate-input" data-validate="Name is required">
 									<span class="focus-input2" data-placeholder="CONTROL POR COLONIAS (Solo aplicable a la Sede Hohenau)"></span><br>
 									<input class="input2" style="font-weight: bold" type="text" placeholder="<?= $finfo["control_colonias"] ?>" readonly>
 								</div>
+								-->
 
 								<div class="wrap-input2 validate-input" data-validate="Name is required">
-									<span class="focus-input2" data-placeholder="PROYECTO DE INVESTIGACIÓN/EXTENSIÓN"></span><br>
+									<span class="focus-input2" data-placeholder="CONTROL ACADÉMICO - UNIDAD ACADÉMICA"></span><br>
+									<input class="input2" style="font-weight: bold" type="text" placeholder="<?= $finfo["control_academico"] ?>" readonly>
+								</div>
+
+								<div class="wrap-input2 validate-input" data-validate="Name is required">
+									<span class="focus-input2" data-placeholder="CONTROL DEL PROYECTO DE INVESTIGACIÓN/EXTENSIÓN - UNIDAD ACADÉMICA"></span><br>
 									<input class="input2" style="font-weight: bold" type="text" placeholder="<?= $finfo["proyecto_inv"] ?>" readonly>
 								</div>
 
@@ -113,8 +128,8 @@
 							}
 						}else{ ?>
 
-							<span class="contact2-form-title" style="color: #f8d121">
-								No Encontrado :(
+							<span class="contact2-form-title" style="color: #f92f60">
+								No Encontrado
 							</span>
 							<div class="wrap-input2 validate-input" data-validate="Name is required">
 								<br>
@@ -168,7 +183,7 @@
 <footer class="footer-distributed">
 
 	<div class="footer-left justify-content-center">
-		<p>Designed by Axel Jara &copy; 2021</p>
+		<p>Designed by Axel Jara &copy; 2022</p>
 	</div>
 
 </footer>

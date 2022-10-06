@@ -33,7 +33,7 @@
 	<div class="bg-contact2">
 		<div class="container-contact2">
 			<div class="wrap-contact2">
-				<form action="/cobros/search.php" method="POST" class="contact2-form validate-form">
+				<form action="/cobros/cobro_docentes_modulo/search.php" method="POST" class="contact2-form validate-form">
 					<span class="contact2-form-title">
 						Cobros
 					</span>
