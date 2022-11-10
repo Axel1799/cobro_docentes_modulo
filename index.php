@@ -35,7 +35,7 @@
 			<div class="wrap-contact2">
 				<form action="/cobros/cobro_docentes_modulo/search.php" method="POST" class="contact2-form validate-form">
 					<span class="contact2-form-title">
-						Cobros
+						Cobros - Prueba
 					</span>
 					<h4 style="text-align: center;">Inserte el código del acta de la materia</h4>
 					<div class="form-outline">
@@ -71,7 +71,7 @@
 <footer class="footer-distributed">
 
 	<div class="footer-left justify-content-center">
-		<p>Designed by UNAE &copy; 2021</p>
+		<p>Diseñado por Axel Jara &copy; 2022</p>
 	</div>
 
 </footer>

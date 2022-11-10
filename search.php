@@ -13,12 +13,26 @@
 	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<script src="app.js"></script>
 	<script src="https://kit.fontawesome.com/85b07c1155.js" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"/>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		window.onload = function () {
+			OpenBootstrapPopup();
+		};
+		function OpenBootstrapPopup() {
+			$("#ventana-modal").modal('show');
+		}
+	</script>
 	
 
 </head>
 
 <body>
+	
+
 	<!-- Image and text -->
 
 	<nav class="navbar navbar-light justify-content-center navbar-custom">
@@ -31,10 +45,14 @@
 	<div class="bg-contact2">
 		<div class="container-contact2">
 			<div class="wrap-contact2">
+
+				
+
 				<form action="/cobros/cobro_docentes_modulo/" method="POST" class="contact2-form validate-form">
 					<span class="contact2-form-title">
-						Cobros
+						Cobros - Prueba
 					</span>
+
 					<?php
 
 					require("data/db.php");
@@ -62,10 +80,42 @@
 								<span class="contact2-form-title" style="color: #f8d121">
 									¡Encontrado!
 								</span>
+								<span class="contact2-form-title" style="color: #E74F52">
+									<h5 style="text-align: center;">Estos datos corresponden al mes de</h5>
+									<h4 style="text-align: center;">OCTUBRE</h4>
+									<h5 style="text-align: center;">Que se abonan del 10 al 15 de noviembre del 2022</h5>
+								</span>							
 
-								<p style="color: #cf1313">
-									<u>Observación</u>: Tenga en cuenta que si alguno de los datos expresados en esta página difiere a los datos que usted considera correctos, debe comunicar esa diferencia a su Unidad Académica y dicho cambio se aplicará a partir de las 24 horas sucesivas.
-								</p> <br><br>
+								<div class="modal" tabindex="-1" id="ventana-modal">
+									<div class="modal-dialog modal-dialog-centered">
+										<div class="modal-content">					
+											<div class="modal-header">
+												
+												<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+												<span aria-hidden="true">&times;</span>
+												</button>
+											</div>
+											<div class="modal-body">
+												<p style="text-align:center; color: #cf1313">
+													Tenga en cuenta que si alguno de los datos expresados en esta página difiere a los datos que usted considera correctos, 
+													debe comunicar esa diferencia a su Unidad Académica y dicho cambio se aplicará a partir de las 24 horas sucesivas.
+												</p>
+											</div>
+											<div class="container-contact2-form-btn">
+												<div class="wrap-contact2-form-btn">
+													<div class="contact2-form-bgbtn"></div>
+													<button class="contact2-form-btn" data-dismiss="modal">
+														Aceptar
+													</button>
+												</div>
+											</div><br>	
+										</div>
+									</div>
+								</div>
+
+								
+								
+								
 								<p>Código de acta <?= $finfo["acta"] ?></p><br>
 
 								<div class="wrap-input2 validate-input" data-validate="Name is required">
@@ -158,6 +208,10 @@
 							</button>
 						</div>
 					</div>
+					<br>
+					<p style="color: #6b6b6b">
+						<u>Observación</u>: Tenga en cuenta que si alguno de los datos expresados en esta página difiere a los datos que usted considera correctos, debe comunicar esa diferencia a su Unidad Académica y dicho cambio se aplicará a partir de las 24 horas sucesivas.
+					</p> 
 					<br><p align="center">Ante cualquier inconsistencia, comunicarse al +595 986 635960</p>
 
 				</form>
